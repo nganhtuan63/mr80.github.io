@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Holy Powerball Lucky Numbers</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<style>
+.slot {font-size:30px; font-weight: bold}
+.slotPowerBall {color:red;}
+.tdSlot {padding-right: 10px;}
+.tableSlot {border-spacing: 10px 5px;}
+</style>
+</head>
+<body>
+<div>
+	<h1>Holy Powerball Lucky Numbers</h1>
+	<table class="tableSlot">
+		<tr>
+			<td class="tdSlot"><span class="slot" id="slot1"></span></td>
+			<td class="tdSlot"><span class="slot" id="slot2"></span></td>
+			<td class="tdSlot"><span class="slot" id="slot3"></span></td>
+			<td class="tdSlot"><span class="slot" id="slot4"></span></td>
+			<td class="tdSlot"><span class="slot" id="slot5"></span></td>
+			<td class="tdSlot"><span class="slot slotPowerBall" id="slotPowerball"></span></td>
+		</tr>
+	</table>
+	<div id="loading" style="display:none;">
+		<img src="processing.gif" />
+	</div>
+	<p><input type="button" id="holy" value="Click here for your Lucky Numbers" name="holy" onClick="return giveMeLuck();"/></p>
+</div>
+<script type="text/javascript">
+
+var interval = null;
+
+function pad(n) {
+    return (n < 10) ? ("0" + n) : n;
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function processLuck() {
+	for (var i=1; i<6; i++) {
+		var luckyNumber = getRandomInt(1, 69);
+		$('#slot'+i).html(pad(luckyNumber));
+	}
+	var luckyPowerNumber = getRandomInt(1, 26);
+	$('#slotPowerball').html(pad(luckyPowerNumber));
+	$('#loading').hide();
+	clearInterval(interval);
+}
+
+function giveMeLuck() {
+	$('#loading').show();
+	interval = setInterval(processLuck, 5000);
+}
+</script>
+</body>
+</html>
