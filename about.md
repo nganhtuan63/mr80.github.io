@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a full stack developer and I am studying a master's degree in Software Engineering at CSU Fullerton. In my free time, I spend time on side projects to build software/applications people love to use.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+My LinkedIn: [nganhtuan63](https://vn.linkedin.com/in/nganhtuan63)
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+Email: [nganhtuan63@gmail.com](mailto:nganhtuan63@gmail.com)
+Mobile: (+1)408-417-0710
