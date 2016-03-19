@@ -6,9 +6,9 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
        <h1 class="postListTitle"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-       <div class="entry postListThumb">
+       <a href="{{ site.baseurl }}{{ post.url }}"><div class="entry postListThumb">
         {{ post.excerpt }}
-      </div>
+      </div></a>
       <div class="clear"></div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
