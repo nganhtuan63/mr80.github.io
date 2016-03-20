@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a full stack developer and I am studying a master's degree in Software Engineering at CSU Fullerton. In my free time, I spend time on side projects to build software/applications people love to use.
+I love to build useful products.
 
 ### More Information
 
